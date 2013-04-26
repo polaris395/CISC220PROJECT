@@ -1,29 +1,35 @@
-LIBS =
+CXXFLAGS = -g
+LIBS = 
 LDLIBS =
 INCLUDES = 
 
-# first name a variable objects for all object files
 
 objectsheap = BinaryHeap.o
 objectstestheap = BinaryHeapTest.o
 
-# name a variable sources for all source files
+objectsgraph = Dijkstra.o Network.o 
+objectstestdijkstra = DijkstraTest.o
 
-sourcesheap = BinaryHeap.cpp
-sourcestestheap = BinaryHeapTest.cpp
+objectsproject = RailSchedule.o Project.o
+objectstestproject = ProjectTest.o
+
+
 # now give target with objects as variable dependencies + command line
 
-all: clean testheap
-
+all: clean testheap testdijkstra testproject
+	
 testheap: $(objectsheap) $(objectstestheap) 
-	$(CXX) -o BinaryHeapTest.exe $(objectsheap) $(objectstestheap)
+	$(CXX) $(CXXFLAGS) -o BinaryHeapTest.exe $(objectsheap) $(objectstestheap) $(INCLUDES)
+
+testdijkstra: $(objectsheap) $(objectsgraph) $(objectstestdijkstra) 
+	$(CXX) $(CXXFLAGS) -o DijkstraTest.exe $(objectsheap) $(objectsgraph) $(objectstestdijkstra) $(INCLUDES)
+
+testproject: $(objectsheap) $(objectsgraph) $(objectsproject) $(objectstestproject)
+	$(CXX) $(CXXFLAGS) -o ProjectTest.exe $(objectsheap) $(objectsgraph) $(objectsproject) $(objectstestproject) $(INCLUDES)
+
 # how to build all object files from all dependent source files
 
-$(objectsheap): $(sourcesheap)
-	$(CXX) -c $(sourcesheap) $(INCLUDES)
-
-$(objectstestheap): $(sourcestestheap)
-	$(CXX) -c $(sourcestestheap) $(INCLUDES)
+	
 
 clean:
 	rm -f *.o

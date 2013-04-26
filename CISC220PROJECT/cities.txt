@@ -1,0 +1,60 @@
+1 14 512 Portland, Ore.
+2 18 316 Oakland, Calif.
+3 43 289 Fresno, Calif.
+4 59 220 Los Angeles, Calif.
+5 64 494 Baker, Ore.
+6 123 340 Richfield, Utah
+7 179 247 Albuquerque, N.M.
+8 229 249 Amarillo, Tex.
+9 283 393 Lincoln, Neb.
+10 304 349 Kansas City, Mo.
+11 350 177 Jackson, Miss.
+12 351 116 New Orleans, La.
+13 351 248 Memphis, Tenn.
+14 372 135 Mobile, Ala.
+15 391 366 Indianapolis, Ind.
+16 396 447 Grand Rapids, Mich.
+17 410 213 Atlanta, Ga.
+18 418 414 Toledo, Ohio
+19 438 330 Charleston, W. Va.
+20 438 127 Jacksonville, Fla.
+21 517 392 New York, N.Y.
+22 543 448 Manchester, N.H.
+#   
+1 3  
+1 5  
+1 2  
+1 4  
+2 4  
+2 5  
+3 6  
+3 7  
+3 4  
+5 6
+6 9
+6 8
+7 9
+7 10
+8 10
+8 11
+9 10
+9 11
+10 12
+10 13
+11 13
+11 12
+13 14
+13 15
+13 16
+13 17
+14 18
+15 19
+16 20
+18 19
+18 22
+18 20
+18 21
+19 22
+19 20
+20 22
+21 22

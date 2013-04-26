@@ -1,7 +1,6 @@
 #ifndef BINARY_HEAP_H_
 #define BINARY_HEAP_H_
 
-#include <cstdlib>
 #include <string>
 #include <vector>
 

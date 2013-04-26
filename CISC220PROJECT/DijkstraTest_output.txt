@@ -1,0 +1,23 @@
+           Portland, Ore.         0           Portland, Ore.
+          Oakland, Calif.       196           Portland, Ore.
+           Fresno, Calif.       224           Portland, Ore.
+      Los Angeles, Calif.       294           Fresno, Calif.
+              Baker, Ore.        53           Portland, Ore.
+          Richfield, Utah       217              Baker, Ore.
+        Albuquerque, N.M.       366           Fresno, Calif.
+           Amarillo, Tex.       356          Richfield, Utah
+            Lincoln, Neb.       385          Richfield, Utah
+         Kansas City, Mo.       433            Lincoln, Neb.
+           Jackson, Miss.       496           Amarillo, Tex.
+         New Orleans, La.       557           Jackson, Miss.
+           Memphis, Tenn.       544         Kansas City, Mo.
+             Mobile, Ala.       658           Memphis, Tenn.
+       Indianapolis, Ind.       668           Memphis, Tenn.
+      Grand Rapids, Mich.       748           Memphis, Tenn.
+             Atlanta, Ga.       612           Memphis, Tenn.
+             Toledo, Ohio       813       Charleston, W. Va.
+       Charleston, W. Va.       727       Indianapolis, Ind.
+       Jacksonville, Fla.       930       Charleston, W. Va.
+           New York, N.Y.       914             Toledo, Ohio
+         Manchester, N.H.       884       Charleston, W. Va.
+Total distance is 11075
