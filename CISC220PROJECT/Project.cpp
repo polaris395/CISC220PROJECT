@@ -20,14 +20,14 @@ double Project::totalDistanceTraveled() {
   double sum = 0;
   RouteSchedule * currRouteSchedule;
   Station * currStation = NULL;
-  for (vector<RouteSchedule*>::iterator iter = railSchedule->routeSchedules.begin();
-				iter != railSchedule->routeSchedules.end(); ++iter) {
+  for (vector<RouteSchedule*>::iterator iter = railSchedule.routeSchedules.begin();
+				iter != railSchedule.routeSchedules.end(); ++iter) {
 	currRouteSchedule = *iter;
 	if (currStation == NULL || currRouteSchedule->source->id != currStation->id) {
 		currStation = currRouteSchedule->source;
 		dijkstra_getShortestPaths(&network, currStation, table);
 	}
-	sum += table[currRouteSchedule->destination] * currRouteSchedule->passengers;
+	sum += table[currRouteSchedule->destination]->dist * (double)currRouteSchedule->passengers;
   }
   return sum;
 }
