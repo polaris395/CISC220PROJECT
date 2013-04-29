@@ -4,10 +4,7 @@
 #include <vector>
 #include <map>
 #include <limits>
-#include <iostream>
 
-using std::cout;
-using std::endl;
 using std::vector;
 using std::numeric_limits;
 using std::map;
@@ -37,12 +34,8 @@ void dijkstra_getShortestPaths(Network * net, Station * source,
 		stationrecord->dist = ((station->id) == (source->id)) ? 0 : inf;
 		stationrecord->pred = source;
 		stationrecord->container = recordheap->insert(stationrecord);
-//		table.insert(std::pair<Station*,StationRecord*>(station,stationrecord));
 		table[station] = stationrecord;
-		std::cout << table[station]->toString() << endl;
 	}
-
-	std::cout << "END OF DEBUG" << endl;
 
 	// At this point, the table should have station->record for all stations in network,
 	// There is a min binary heap that has all of the stationrecords linked.
@@ -51,13 +44,10 @@ void dijkstra_getShortestPaths(Network * net, Station * source,
 	Link * link;
 
 	// While we still have items in the heap, we need to iterate
-	int iterations = 0;
 	while(!recordheap->isEmpty()) {
-		++iterations;
 		// Get the node off of the heap
 		// NOTE: deleteMin() returns the data at the node, not the entire node.
 		startrecord = (StationRecord *)recordheap->deleteMin();
-//		std::cout << sourcerecord->toString() << endl;
 
 		// Look through each link and see if a better path is found.
 		for (vector<Link*>::iterator iter = startrecord->station->links.begin();
@@ -68,7 +58,6 @@ void dijkstra_getShortestPaths(Network * net, Station * source,
 			// this is the better path and everything needs to be updated.
 
 			Station * endstation = (startrecord->station->id == link->source->id) ? link->target : link->source;
-			StationRecord * temprec = table[endstation];
 			if (startrecord->dist + link->weight < table[endstation]->dist) {
 				// Change the dist to the new distance
 				table[endstation]->dist = startrecord->dist + link->weight;
@@ -80,12 +69,6 @@ void dijkstra_getShortestPaths(Network * net, Station * source,
 			}
 		}
 	}
-
-	// Clean up
-
-
-
-
 
   // this is just to show you by example iteration on the STL vector
   // and access to a record within the table
