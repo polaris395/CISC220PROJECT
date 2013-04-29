@@ -12,28 +12,31 @@ using std::map;
 
 void dijkstra_getShortestPaths(Network * net, Station * source,
     map<Station*,StationRecord*> & table) {
-	// TODO: Complete implementation according to Dijkstra's algorithm
-
+	
 	// add each StationRecord to a heap with infinite priority and the source with 0 priority
 	// initialize dist, pred, and heap node
 	//---------
-	// The min heap
+	// Create a min heap
 	MinBinaryHeap * recordheap = new MinBinaryHeap();
-	double inf = numeric_limits<double>::max();
+	// Initialize the value of infinity
+	double inf = numeric_limits<double>::max(); 
 	StationRecord * stationrecord;
 	Station* station;
-
+  
+  //Walk through the vector of vertices from net (Network)
 	for (vector<Station*>::iterator iter = net->vertices.begin();
 		iter != net->vertices.end(); ++iter) {
+		//station points to the current station
 		station = *iter;
-
-		// This is a crappy constructor (Can we edit constructor?): So we have to adjust each piece line-by-line.
+		//We are creating a new Station Record for our Map
 		stationrecord = new StationRecord(station);
-		// If dist is 0, this is the first station.
-		// Can be made pretty without a dist calculation, but this is sufficient.
+		//Set the source stationRecord's distance to 0 and all others to infinity
 		stationrecord->dist = ((station->id) == (source->id)) ? 0 : inf;
+		//Set every stationRecord's predecessor to the source station
 		stationrecord->pred = source;
+		//Put the StationRecord on the minHeap and this will also give us a pointer the BHN created
 		stationrecord->container = recordheap->insert(stationrecord);
+		//Put station:stationrecord (key:value) into the map
 		table[station] = stationrecord;
 	}
 
@@ -56,8 +59,10 @@ void dijkstra_getShortestPaths(Network * net, Station * source,
 
 			// If SOURCE dist + LINK distance is less than the current TARGET record,
 			// this is the better path and everything needs to be updated.
-
+			
+			// endstation is the opposite station from the vertex we are on
 			Station * endstation = (startrecord->station->id == link->source->id) ? link->target : link->source;
+			// Check if we need to update the distance to a shorter route
 			if (startrecord->dist + link->weight < table[endstation]->dist) {
 				// Change the dist to the new distance
 				table[endstation]->dist = startrecord->dist + link->weight;
