@@ -41,9 +41,9 @@ class Network {
 
 class Station {
   public:
-    int id;
-    double x;
-    double y;
+    const int id;
+    const double x;
+    const double y;
     string text;
     
     vector<Link*> links;

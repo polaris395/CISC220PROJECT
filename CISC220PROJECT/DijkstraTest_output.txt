@@ -1,23 +1,23 @@
            Portland, Ore.         0           Portland, Ore.
-          Oakland, Calif.       196           Portland, Ore.
-           Fresno, Calif.       224           Portland, Ore.
-      Los Angeles, Calif.       294           Fresno, Calif.
-              Baker, Ore.        53           Portland, Ore.
-          Richfield, Utah       217              Baker, Ore.
-        Albuquerque, N.M.       366           Fresno, Calif.
-           Amarillo, Tex.       356          Richfield, Utah
-            Lincoln, Neb.       385          Richfield, Utah
-         Kansas City, Mo.       433            Lincoln, Neb.
-           Jackson, Miss.       496           Amarillo, Tex.
-         New Orleans, La.       557           Jackson, Miss.
-           Memphis, Tenn.       544         Kansas City, Mo.
-             Mobile, Ala.       658           Memphis, Tenn.
-       Indianapolis, Ind.       668           Memphis, Tenn.
-      Grand Rapids, Mich.       748           Memphis, Tenn.
-             Atlanta, Ga.       612           Memphis, Tenn.
-             Toledo, Ohio       813       Charleston, W. Va.
-       Charleston, W. Va.       727       Indianapolis, Ind.
-       Jacksonville, Fla.       930       Charleston, W. Va.
-           New York, N.Y.       914             Toledo, Ohio
-         Manchester, N.H.       884       Charleston, W. Va.
-Total distance is 11075
+          Oakland, Calif.   196.041           Portland, Ore.
+           Fresno, Calif.   224.878           Portland, Ore.
+      Los Angeles, Calif.   295.447           Portland, Ore.
+              Baker, Ore.   53.1413           Portland, Ore.
+          Richfield, Utah   218.056              Baker, Ore.
+        Albuquerque, N.M.   367.215           Fresno, Calif.
+           Amarillo, Tex.    357.76          Richfield, Utah
+            Lincoln, Neb.   386.606          Richfield, Utah
+         Kansas City, Mo.   435.361            Lincoln, Neb.
+           Jackson, Miss.   498.561           Amarillo, Tex.
+         New Orleans, La.   559.569           Jackson, Miss.
+           Memphis, Tenn.   546.761         Kansas City, Mo.
+             Mobile, Ala.   661.696           Memphis, Tenn.
+       Indianapolis, Ind.   671.356           Memphis, Tenn.
+      Grand Rapids, Mich.   750.785           Memphis, Tenn.
+             Atlanta, Ga.   615.361           Memphis, Tenn.
+             Toledo, Ohio   816.907       Charleston, W. Va.
+       Charleston, W. Va.   730.559       Indianapolis, Ind.
+       Jacksonville, Fla.   933.559       Charleston, W. Va.
+           New York, N.Y.   918.322             Toledo, Ohio
+         Manchester, N.H.   888.512       Charleston, W. Va.
+Total distance is 11126.5

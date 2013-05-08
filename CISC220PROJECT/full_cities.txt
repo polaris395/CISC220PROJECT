@@ -1,0 +1,122 @@
+1 14 512 Portland, Ore.
+2 16 315 San Francisco, Calif.
+3 17 566 Seattle, Wash.
+4 43 359 Reno, Nev.
+5 59 220 Los Angeles, Calif.
+6 71 186 San Diego, Calif.
+7 72 535 Lewiston, Idaho
+8 91 274 Las Vegas, Nev.
+9 123 206 Phoenix, Ariz.
+10 123 340 Richfield, Utah
+11 124 539 Helena, Mont.
+12 160 349 Grand Junction, Colo.
+13 179 247 Albuquerque, N.M.
+14 181 162 El Paso, Tex.
+15 198 401 Cheyenne, Wyo.
+16 240 545 Bismarck, N.D.
+17 245 483 Pierre, S.D.
+18 263 102 San Antonio, Tex.
+19 274 256 Oklahoma City, Okla.
+20 276 314 Wichita, Kan.
+21 282 188 Dallas, Tex.
+22 283 393 Lincoln, Neb.
+23 304 349 Kansas City, Mo.
+24 313 180 Shreveport, La.
+25 314 412 Des Moines, Iowa
+26 318 499 Minneapolis, Minn.
+27 320 232 Hot Springs, Ark.
+28 350 177 Jackson, Miss.
+29 351 248 Memphis, Tenn.
+30 351 116 New Orleans, La.
+31 355 367 Springfield, Ill.
+32 372 135 Mobile, Ala.
+33 373 449 Milwaukee, Wis.
+34 391 366 Indianapolis, Ind.
+35 395 327 Louisville, Ky.
+36 396 447 Grand Rapids, Mich.
+37 409 350 Cincinnati, Ohio
+38 410 213 Atlanta, Ga.
+39 424 431 Detroit, Mich.
+40 430 65 Tampa, Fla.
+41 438 330 Charleston, W. Va.
+42 438 409 Cleveland, Ohio
+43 438 127 Jacksonville, Fla.
+44 444 219 Columbia, S.C.
+45 446 250 Charlotte, N.C.
+46 453 10 Miami, Fla.
+47 456 383 Pittsburgh, Pa.
+48 456 303 Roanoke, Va.
+49 467 446 Buffalo, N.Y.
+50 486 343 Washington, D.C.
+51 490 354 Baltimore, Md.
+52 505 371 Philadelphia, Pa.
+53 515 391 Newark, N.J.
+54 517 392 New York, N.Y.
+55 528 405 New Haven, Conn.
+56 532 480 Montpelier, Vt.
+57 532 425 Springfield, Mass.
+58 543 448 Manchester, N.H.
+59 544 419 Providence, R.I.
+60 547 432 Boston, Mass.
+61 556 465 Portland, Maine
+#   
+1 3
+1 7
+2 4
+4 10
+5 8
+5 6
+6 9
+7 11
+8 10
+9 13
+9 14
+10 12
+11 16
+12 15
+15 22
+16 17
+17 26
+18 21
+19 20
+19 27
+20 23
+21 24
+22 23
+22 25
+23 31
+24 27
+24 28
+26 33
+27 29
+28 32
+30 32
+31 34
+32 43
+33 36
+34 37
+35 37
+36 39
+37 41
+38 44
+39 42
+39 49
+40 43
+40 46
+41 50
+41 48
+42 47
+44 45
+45 48
+47 51
+50 51
+51 52
+52 53
+53 54
+54 55
+55 57
+56 61
+57 59
+58 60
+58 61
+59 60

@@ -36,15 +36,15 @@ int main(int argc, char **argv) {
 
   // check to make sure that there exists a distance to every node that is less than
   // some really big number
-  for (vector<Station*>::iterator iter = network.vertices.begin();
-             iter != network.vertices.end(); iter++) {
-    StationRecord* v = table[*iter];
+  for (vector<Station*>::iterator iter2 = network.vertices.begin();
+             iter2 != network.vertices.end(); iter2++) {
+    StationRecord* v = table[*iter2];
     totalDistance += v->dist;
 
     cout << v->toString() << endl;
 
     if (!(v->dist < big && (v->station == source || v->dist > 0))) {
-      cerr << "failure: " << v->station->text << " (from source " << source->text << ")" << endl;
+      cerr << "Station does not have distance after dijkstra's algorithm: " << v->station->text << " (from source " << source->text << ")" << endl;
     }
   }
         

@@ -115,7 +115,7 @@ bool Network::writeToFile(const char * fileName) {
       Link* l = *linkIter;
 
       if (l->source->id < l->target->id) {
-        outFile << l->source->id << " " << l->target->id << l->text << endl;
+        outFile << l->source->id << " " << l->target->id << " " << l->text << endl;
       }
     }
   }
